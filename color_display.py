@@ -5,7 +5,7 @@ import os
 def show_color_window(color_name):
     image_path = os.path.join("images", f"{color_name}.png")
     if not os.path.exists(image_path):
-        print(f"Görsel bulunamadı: {image_path}")
+        print(f"No image found: {image_path}")
         return
 
     window = tk.Tk()
